@@ -6,11 +6,14 @@ import Book from '../components/Book';
 const BooksList = ({ books }) => {
   return (
     <table>
-      <tr>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
       {
         books.map((book) => (
           <Book
@@ -21,6 +24,8 @@ const BooksList = ({ books }) => {
           />
         ))
       }
+      </tbody>
+
     </table>
   );
 };
@@ -36,7 +41,7 @@ BooksList.defaultProps = {
 };
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf,
+  books: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default connect(mapStateToProps)(BooksList);
