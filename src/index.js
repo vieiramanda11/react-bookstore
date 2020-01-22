@@ -7,17 +7,17 @@ import rootReducer from './reducers';
 
 const booksArray = [
   {
-    id: Math.random() * 10 ** 9,
+    id: (Math.random() * (10 ** 9)),
     title: 'Red Queen',
     category: 'Action',
   },
   {
-    id: Math.random() * 10 ** 9,
+    id: (Math.random() * (10 ** 9)),
     title: 'React Fundamentals',
     category: 'Learning',
   },
   {
-    id: Math.random() * 10 ** 9,
+    id: (Math.random() * (10 ** 9)),
     title: 'It',
     category: 'Horror',
   },
