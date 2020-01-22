@@ -14,23 +14,14 @@ const BooksList = ({ books }) => {
         </tr>
       </thead>
       <tbody>
-      {
-        books.map((book) => (
-          <Book
-            key={book.id}
-            id={book.id}
-            title={book.title}
-            category={book.category}
-          />
-        ))
-      }
+        { books.map((book) => <Book book={book} key={book.id} />)}
       </tbody>
-
     </table>
   );
 };
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return {
     books: state.books,
   };
