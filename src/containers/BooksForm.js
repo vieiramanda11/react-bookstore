@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { createBook } from '../actions';
 
 const BooksForm = ({ createBook }) => {
@@ -12,6 +13,7 @@ const BooksForm = ({ createBook }) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    console.log('name is:', name);
     if (name === 'category') {
       setState({
         title: state.title,
@@ -39,9 +41,9 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form onChange={handleChange} onSubmit={handleSubmit}>
-      <input type="text" value={state.title} name="book" placeholder="New book" />
-      <select value={state.category}>
+    <form onSubmit={handleSubmit}>
+      <input type="text" onChange={handleChange} value={state.title} name="title" placeholder="New book" />
+      <select onChange={handleChange} value={state.category} name="category">
         { categories.map((category) => (
           <option key={category} value={category}>{category}</option>
         ))}
@@ -51,4 +53,12 @@ const BooksForm = ({ createBook }) => {
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  createBook: (book) => dispatch(createBook(book)),
+});
+
+export default connect(null, mapDispatchToProps)(BooksForm);
