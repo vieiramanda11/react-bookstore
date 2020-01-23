@@ -6,6 +6,7 @@ const Book = ({ book }) => (
     <td>{book.id}</td>
     <td>{book.title}</td>
     <td>{book.category}</td>
+    <td><button type="button">Delete</button></td>
   </tr>
 );
 

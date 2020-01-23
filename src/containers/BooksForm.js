@@ -13,7 +13,6 @@ const BooksForm = ({ createBook }) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    console.log('name is:', name);
     if (name === 'category') {
       setState({
         title: state.title,
