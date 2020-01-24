@@ -21,6 +21,7 @@ body {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 37px;
 }
 
 .header h1 {
@@ -72,4 +73,50 @@ body {
 	background-size: 14px 15px;
   background-position: 250px 15px;
   padding-left: 15px;
+}
+
+.book-container {
+  height: 170px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin: 15px 200px;
+}
+
+.book-container p {
+  margin: 16px 27px;
+  width: 100%;
+}
+
+.book-container button {
+  margin: 16px 20px;
+}
+
+.category {
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  color: #121212;
+}
+
+.title {
+  width: 197px;
+  height: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.remove-button {
+  width: 54px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
