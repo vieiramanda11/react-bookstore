@@ -4,6 +4,10 @@
 
 ### ✨ [Demo](https://react-app-bookstore.herokuapp.com/)
 
+## Preview
+
+![](bookstore.gif)
+
 ## Tools used
   
   * Node.js

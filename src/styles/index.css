@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  margin: 50px 100px;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}
+
+.header {
+  display: inline-flex;
+  align-items: center;
+  height:  95px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 37px;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0290ff;
+  margin: 29px 100px;
+}
+
+.header ul li {
+  display: inline;
+  list-style-type: none;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  opacity: 0.5;
+}
+
+#active {
+  color: #121212;
+  opacity: 1;
+  margin-right: 41px;
+}
+
+.filter-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter-container p {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #4386bf;
+}
+
+.select {
+  width: 285px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  color: #c4c4c4;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  appearance: none;
+	background:url('http://www.free-icons-download.net/images/small-triangular-down-arrow-icon-38063.png');
+	background-repeat: no-repeat;
+	background-size: 14px 15px;
+  background-position: 250px 15px;
+  padding-left: 15px;
+}
+
+.book-container {
+  height: 170px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin: 15px 200px;
+}
+
+.book-container p {
+  margin: 16px 27px;
+  width: 100%;
+}
+
+.book-container button {
+  margin: 16px 20px;
+}
+
+.category {
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: bold;
+  color: #121212;
+}
+
+.title {
+  width: 197px;
+  height: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.remove-button {
+  width: 54px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container {
+  margin: 45px 200px;
+}
+
+.line {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.form-container p {
+  height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.input-title {
+  width: 55%;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+#select-form {
+  width: 17%;
+  height: 48px;
+  margin-left: 5px;
+  background-size: 14px 15px;
+  background-position: 90px 15px;
+}
+
+.button-form {
+  width: 25%;
+  height: 47px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  float: right;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}

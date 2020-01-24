@@ -7,12 +7,11 @@ const Book = ({ book, deleteBook }) => {
   };
 
   return (
-    <tr>
-      <td>{book.id}</td>
-      <td>{book.title}</td>
-      <td>{book.category}</td>
-      <td><button type="button" onClick={handleRemoveBook}>Delete</button></td>
-    </tr>
+    <div className="book-container">
+      <p className="category">{book.category}</p>
+      <p className="title">{book.title}</p>
+      <button className="remove-button" type="button" onClick={handleRemoveBook}>Remove</button>
+    </div>
   );
 };
 

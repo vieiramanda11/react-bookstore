@@ -29,15 +29,19 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" onChange={handleChange} value={state.title} name="title" placeholder="New book" />
-      <select onChange={handleChange} value={state.category} name="category">
-        { categories.map((category) => (
-          <option key={category} value={category}>{category}</option>
-        ))}
-      </select>
-      <button type="submit">Create new book</button>
-    </form>
+    <div className="form-container">
+      <div className="line" />
+      <p>ADD NEW BOOK</p>
+      <form onSubmit={handleSubmit}>
+        <input type="text" onChange={handleChange} value={state.title} name="title" placeholder="Book title" className="input-title" />
+        <select onChange={handleChange} value={state.category} name="category" className="select" id="select-form">
+          { categories.map((category) => (
+            <option key={category} value={category}>{category}</option>
+          ))}
+        </select>
+        <button type="submit" className="button-form">ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 
