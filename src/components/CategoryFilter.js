@@ -10,12 +10,15 @@ const CategoryFilter = ({ filterCategory }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
-    <select name="category" onChange={handleFilterChange}>
-      <option value="All">All</option>
-      { categories.map((category) => (
-        <option key={category} value={category}>{category}</option>
-      ))}
-    </select>
+    <div className="filter-container">
+      <p>Filter by category: </p>
+      <select className="filter" name="category" onChange={handleFilterChange}>
+        <option value="All" className="option">All</option>
+        { categories.map((category) => (
+          <option key={category} value={category} className="option">{category}</option>
+        ))}
+      </select>
+    </div>
   );
 };
 

@@ -43,3 +43,33 @@ body {
   opacity: 1;
   margin-right: 41px;
 }
+
+.filter-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter-container p {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #4386bf;
+}
+
+.filter {
+  width: 285px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  color: #c4c4c4;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  appearance: none;
+	background:url('http://www.free-icons-download.net/images/small-triangular-down-arrow-icon-38063.png');
+	background-repeat: no-repeat;
+	background-size: 14px 15px;
+  background-position: 250px 15px;
+  padding-left: 15px;
+}
