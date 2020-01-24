@@ -8,7 +8,7 @@ body {
 }
 
 .app {
-  margin: 150px 100px;
+  margin: 50px 100px;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
@@ -59,7 +59,7 @@ body {
   color: #4386bf;
 }
 
-.filter {
+.select {
   width: 285px;
   height: 45px;
   border-radius: 4px;
@@ -119,4 +119,57 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.form-container {
+  margin: 45px 200px;
+}
+
+.line {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.form-container p {
+  height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.input-title {
+  width: 55%;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+#select-form {
+  width: 17%;
+  height: 48px;
+  margin-left: 5px;
+  background-size: 14px 15px;
+  background-position: 90px 15px;
+}
+
+.button-form {
+  width: 25%;
+  height: 47px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  float: right;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
 }
